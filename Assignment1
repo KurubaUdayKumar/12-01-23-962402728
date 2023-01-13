@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle
+{
+public:
+    void area1(int l, int b)
+    {
+        cout<<"Area of Rectangle is = "<<l*b<<endl;
+    }
+
+    void area2(int a)
+    {
+        cout<<"Area of Square is = "<<a*a<< endl;
+    }
+};
+
+int main()
+{
+    Rectangle obj;
+    obj.area1(5,6);
+    obj.area2(5);
+}
