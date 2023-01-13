@@ -44,3 +44,24 @@ int main()
  cout<<"\t Enter Details of Students"<<endl;
  cout<<"\n"<<endl;
  for (int i=0; i<j; i++)
+ {
+     cout<<" Enter details of "<<i+1<<" Student"<<endl; 
+     cout<<"\t Name : ";
+     cin>>name;
+     cout<<"\t Age : ";
+     cin >>age;
+     cout<<"\t Address : ";
+     cin>>add;
+     s[i].setinfo(name, age, add);
+     cout<<endl;
+ }
+   cout<<"\t Displaying Details of Students Entered"<<endl;
+   cout<<"\n"<<endl;
+   for(int i=0; i<j; i++)
+   {
+    cout<<"\n Details of "<<i+1<<" Student is"<<endl; 
+    s[i].display();
+   }
+ 
+
+}
